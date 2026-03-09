@@ -1,38 +1,38 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Bienvenido</title>
+<meta charset="UTF-8">
+<title>Agendar Cita Psicólogo</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1 class="titulo">Bienvenido al Sistema de Citas Psicológicas</h1>
-</header>
+<h1>Centro de Atención Psicológica</h1>
 
 <div class="contenedor">
 
-<p>
-Nuestro objetivo es ayudarte a mejorar tu bienestar emocional.
-Aquí puedes agendar una cita con uno de nuestros psicólogos profesionales.
-</p>
+<h2>Registro</h2>
 
-<div class="botones">
+<input type="text" id="regNombre" placeholder="Nombre">
+<input type="email" id="regCorreo" placeholder="Correo">
+<input type="password" id="regPassword" placeholder="Contraseña">
 
-<a href="login.html">
-<button class="btn-login">Iniciar Sesión</button>
-</a>
+<button onclick="registrar()">Registrarse</button>
 
-<a href="cita.html">
-<button class="btn-cita">Agendar Cita</button>
-</a>
+<hr>
+
+<h2>Iniciar Sesión</h2>
+
+<input type="email" id="loginCorreo" placeholder="Correo">
+<input type="password" id="loginPassword" placeholder="Contraseña">
+
+<button onclick="login()">Ingresar</button>
 
 </div>
 
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>
-
