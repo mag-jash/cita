@@ -1,67 +1,45 @@
-body{
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg,#d8ecff,#dff7f2);
-    text-align:center;
+.contenedor{
+width:400px;
+margin:100px auto;
+padding:20px;
+background:white;
+border-radius:15px;
+box-shadow:0px 8px 20px rgba(0,0,0,0.1);
 }
+
 .titulo{
-    font-family: 'Dancing Script', cursive;
-    font-size:40px;
-    color:#6aa6d6;
-    margin-bottom:10px;
+font-family: 'Dancing Script', cursive;
+color:#6aa6d6;
 }
 
-.subtitulo{
-    font-family: 'Dancing Script', cursive;
-    font-size:28px;
-    color:#7bc8a4;
-    margin-bottom:20px;
-}
-.login-box{
-    width:300px;
-    margin:100px auto;
-    padding:25px;
-    background:#ffffff;
-    border-radius:15px;
-    box-shadow:0px 8px 20px rgba(0,0,0,0.1);
+.botones{
+margin-top:20px;
 }
 
-input, textarea{
-    width:90%;
-    padding:10px;
-    margin:10px;
-    border:1px solid #cde8e5;
-    border-radius:8px;
-    outline:none;
-    background:#f7fdff;
+.btn-login{
+background:#a8d8ff;
+color:#2f4f4f;
+padding:10px 20px;
+border:none;
+border-radius:10px;
+margin:10px;
+cursor:pointer;
 }
 
-input:focus, textarea:focus{
-    border:1px solid #8fd3c7;
-    box-shadow:0px 0px 5px rgba(143,211,199,0.5);
+.btn-login:hover{
+background:#89c8f7;
 }
 
-button{
-    padding:10px 20px;
-    background:#a8d8ff;
-    color:#2f4f4f;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:bold;
-    transition:0.3s;
+.btn-cita{
+background:#a8e6cf;
+color:#2f4f4f;
+padding:10px 20px;
+border:none;
+border-radius:10px;
+margin:10px;
+cursor:pointer;
 }
 
-button:hover{
-    background:#a8e6cf;
-    transform:scale(1.05);
+.btn-cita:hover{
+background:#8fdcc0;
 }
-
-.formulario{
-    width:400px;
-    margin:auto;
-    background:#ffffff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0px 8px 20px rgba(0,0,0,0.1);
-}
-
