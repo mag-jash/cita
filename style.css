@@ -3,7 +3,19 @@ body{
     background: linear-gradient(135deg,#d8ecff,#dff7f2);
     text-align:center;
 }
+.titulo{
+    font-family: 'Dancing Script', cursive;
+    font-size:40px;
+    color:#6aa6d6;
+    margin-bottom:10px;
+}
 
+.subtitulo{
+    font-family: 'Dancing Script', cursive;
+    font-size:28px;
+    color:#7bc8a4;
+    margin-bottom:20px;
+}
 .login-box{
     width:300px;
     margin:100px auto;
@@ -52,3 +64,4 @@ button:hover{
     border-radius:15px;
     box-shadow:0px 8px 20px rgba(0,0,0,0.1);
 }
+
