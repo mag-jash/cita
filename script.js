@@ -1,22 +1,31 @@
-function login(){
+document.getElementById("formCita")?.addEventListener("submit", function(e){
 
-let usuario = document.getElementById("usuario").value;
-let password = document.getElementById("password").value;
+e.preventDefault();
 
-if(usuario == "admin" && password == "1234"){
+let nombre = document.getElementById("nombre").value;
+let correo = document.getElementById("correo").value;
+let psicologo = document.getElementById("psicologo").value;
+let fecha = document.getElementById("fecha").value;
+let hora = document.getElementById("hora").value;
+let motivo = document.getElementById("motivo").value;
 
-window.location = "index.html";
+let cita = {
+nombre,
+correo,
+psicologo,
+fecha,
+hora,
+motivo
+};
 
-}else{
+let citas = JSON.parse(localStorage.getItem("citas")) || [];
 
-alert("Usuario o contraseña incorrectos");
+citas.push(cita);
 
-}
+localStorage.setItem("citas", JSON.stringify(citas));
 
-}
+alert("Cita registrada correctamente");
 
-function cita(){
+this.reset();
 
-alert("Tu cita ha sido registrada correctamente");
-
-}
+});
