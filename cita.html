@@ -1,35 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Agendar Cita</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<h1>Agendar Cita con Psicólogo</h1>
-
-<div class="formulario">
-
-<label>Nombre</label>
-<input type="text" placeholder="Tu nombre">
-
-<label>Correo</label>
-<input type="email" placeholder="Tu correo">
-
-<label>Fecha</label>
-<input type="date">
-
-<label>Hora</label>
-<input type="time">
-
-<label>Motivo de la consulta</label>
-<textarea placeholder="Describe brevemente"></textarea>
-
-<button onclick="cita()">Agendar</button>
-
-</div>
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -42,27 +11,34 @@
 <h1 class="titulo">Agendar Cita con Psicólogo</h1>
 
 <div class="formulario">
+
 <form id="formCita">
 
-<input type="text" id="nombre" placeholder="Nombre del paciente" required>
+<label>Nombre del paciente</label>
+<input type="text" id="nombre" placeholder="Tu nombre" required>
 
+<label>Correo</label>
+<input type="email" id="correo" placeholder="Tu correo" required>
+
+<label>Psicólogo</label>
 <input type="text" id="psicologo" placeholder="Nombre del psicólogo" required>
 
+<label>Fecha</label>
 <input type="date" id="fecha" required>
 
-<textarea id="motivo" placeholder="Motivo de la cita"></textarea>
+<label>Hora</label>
+<input type="time" id="hora" required>
 
-<button type="submit">Registrar Cita</button>
+<label>Motivo de la consulta</label>
+<textarea id="motivo" placeholder="Describe brevemente"></textarea>
+
+<button type="submit">Agendar Cita</button>
 
 </form>
+
 </div>
 
 <script src="script.js"></script>
 
 </body>
-
-<script src="script.js"></script>
-
-</body>
-
 </html>
